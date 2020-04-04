@@ -1,0 +1,7 @@
+module salvacode.ejemplosjavafx {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    opens salvacode.ejemplosjavafx to javafx.fxml;
+    exports salvacode.ejemplosjavafx;
+}
