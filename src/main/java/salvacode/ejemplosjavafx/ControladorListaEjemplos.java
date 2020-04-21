@@ -286,11 +286,21 @@ public class ControladorListaEjemplos {
         closeWindow();
     }
     
+    @FXML
+    private void execEjemplo20() {  
+        Platform.runLater(() -> {
+            try {                
+                (new salvacode.ejemplosjavafx.ejemplos.Ejemplo20ComunicacionEntreScenesFXML.Main()).start(new Stage());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        });
+        closeWindow();
+    }
+    
     private void closeWindow()
     {            
-            // get a handle to the stage
-    Stage stage = (Stage) vbox11.getScene().getWindow();
-    // do what you have to do
-    stage.close();
+        Stage stage = (Stage) vbox11.getScene().getWindow();
+        stage.close();
     }
 }
